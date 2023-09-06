@@ -11,7 +11,7 @@ const LintTask: React.FC = () => {
     <>
       <UnorderedList>
         {todoList
-          .filter((item) => !item.isComplete)
+          .filter((item) => item.isComplete)
           .map((item) => (
             <Task key={item.id} item={item} />
           ))}

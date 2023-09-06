@@ -1,14 +1,14 @@
 import { atom } from "recoil";
 
-type Task = {
+export type TaskType = {
   id: number;
   title: string;
   isComplete: boolean;
 };
 
-type InputTask = Task[];
+export type InputTaskType = TaskType[];
 
-export const todoListState = atom<InputTask>({
+export const todoListState = atom<InputTaskType>({
   key: "todoListState",
   default: [
     // {
