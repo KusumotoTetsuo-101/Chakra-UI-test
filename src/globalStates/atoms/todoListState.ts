@@ -10,11 +10,5 @@ export type InputTaskType = TaskType[];
 
 export const todoListState = atom<InputTaskType>({
   key: "todoListState",
-  default: [
-    // {
-    //   id: 0,
-    //   title: "メール送信",
-    //   isComplete: false,
-    // },
-  ],
+  default: JSON.parse(localStorage.getItem("todoList") || "[]"),
 });

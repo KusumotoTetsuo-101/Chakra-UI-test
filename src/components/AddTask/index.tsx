@@ -15,7 +15,7 @@ const AddTask: React.FC = () => {
     setTodoList((oldTodoList) => [
       ...oldTodoList,
       {
-        id: todoList.length + 1,
+        id: todoList.length,
         title: title,
         isComplete: false,
       },

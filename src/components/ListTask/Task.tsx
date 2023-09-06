@@ -22,8 +22,6 @@ const Task: React.FC<{ item: TaskType }> = ({ item }) => {
     setTodoList(updatedTodoList);
   };
 
-  console.log(todoList);
-
   return (
     <Flex align={"center"} my={4} columnGap={2}>
       <Checkbox onChange={handleCheckboxChange}>{item.title}</Checkbox>
